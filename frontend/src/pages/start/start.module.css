@@ -1,0 +1,7 @@
+.container {
+  padding-top: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 48px;
+}

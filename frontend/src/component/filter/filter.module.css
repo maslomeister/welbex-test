@@ -1,0 +1,52 @@
+.filter-container {
+  flex: 1;
+}
+
+.filter {
+  display: flex;
+  gap: 16px;
+}
+
+p {
+  margin: 0 0 8px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 600;
+  color: #373248;
+  flex: 1;
+}
+
+input {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 16px 0 0;
+  margin: 0;
+  width: 100%;
+  -moz-appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+.input {
+  width: 100%;
+  min-width: 160px;
+  padding: 4px 8px;
+  border: 1px solid #373248;
+  color: #373248;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+}

@@ -1,0 +1,65 @@
+.drop-down-container {
+  flex: 1;
+}
+
+.drop-down {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 600;
+  color: #373248;
+}
+
+p {
+  margin: 0 0 8px;
+}
+
+.option_font {
+  font-family: inherit;
+  font-weight: 500;
+  color: #373248;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 16px 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-weight: 500;
+  color: #373248;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+.select {
+  width: 100%;
+  min-width: 160px;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 4px;
+  border: 1px solid #373248;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+.select select,
+.select::after {
+  grid-area: select;
+}
+
+.select::after {
+  content: "";
+  width: 25px;
+  height: 10px;
+  background-color: #373248;
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}

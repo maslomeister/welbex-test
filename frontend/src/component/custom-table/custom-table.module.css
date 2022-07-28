@@ -1,0 +1,78 @@
+.container {
+  width: 600px;
+  height: 700px;
+}
+
+.table {
+  color: #525252;
+  box-shadow: 0 0 40px 0 rgb(0 0 0 / 15%);
+  border-spacing: 0;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 100%;
+  max-height: 500px;
+}
+
+.table-date-field {
+  min-width: 96px;
+}
+
+thead > tr {
+  color: #fff;
+}
+
+table thead tr {
+  background-color: #373149;
+  height: 60px;
+  font-size: 18px;
+}
+
+thead th {
+  font-weight: 500;
+}
+
+td {
+  height: 50px;
+  text-align: center;
+}
+
+tr:nth-of-type(even) td {
+  background-color: #3731490c;
+}
+
+.page-controls-container {
+  width: fit-content;
+  height: 80px;
+  margin: 32px auto;
+}
+
+.page-controls {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding: 8px 32px;
+  border-radius: 25px;
+  box-shadow: 0 0 40px 0 rgb(0 0 0 / 15%);
+}
+
+.page-button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 20px;
+  color: #373248a2;
+}
+
+.page-button_active {
+  color: #373248;
+  font-weight: 600;
+}
+
+.not-found {
+  font-size: 20px;
+  height: 80px;
+}
