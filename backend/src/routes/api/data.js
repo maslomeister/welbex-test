@@ -67,7 +67,7 @@ router.get("/", async function (req, res) {
 
   if (condition === "contains") {
     if (field === "name") {
-      query += ` WHERE ${field} LIKE '${value}%'`;
+      query += ` WHERE ${field} LIKE '%${value}%'`;
     } else {
       return res
         .status(400)
@@ -77,8 +77,7 @@ router.get("/", async function (req, res) {
 
   try {
     const getAllRows = (await pool.query(query)).rowCount;
-    const pages =
-      getAllRows > 0 ? Math.floor((getAllRows - 1) / maxRowsPerPage) : 1;
+    const pages = getAllRows > 0 ? Math.ceil(getAllRows / maxRowsPerPage) : 1;
 
     query += ` OFFSET ${offset} ROWS LIMIT ${maxRowsPerPage}`;
 
