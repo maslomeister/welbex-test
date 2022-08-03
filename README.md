@@ -1,5 +1,7 @@
 ### Preview
 
+https://user-images.githubusercontent.com/64310545/182647191-f3b6f8cd-5cc0-4a88-ab16-5b3073838746.mp4
+
 ### Описание
 
 Интерактивная таблица с кастомной пагинацией
